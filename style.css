@@ -2,10 +2,7 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
     margin: 0;
     padding: 0;
 }
-body {
-    display: block;
-    margin: 8px;
-}
+
 html {
     font-size: 14px;
     font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
@@ -38,8 +35,6 @@ header {
 p{
     line-height: 1.5;
 }
-
-
 nav {
     display: block;
 }
@@ -52,7 +47,7 @@ nav {
 }
 .site-header {
     width: 100%;
-/*    position: absolute;*/
+    /*position: absolute;*/
 }
 .site-header {
     padding-top: 20px;
@@ -75,10 +70,6 @@ nav {
 }
 .header-nav-list.contents-tidy{
     align-items:center;
-}
-.contents-tidy{
-    display: flex;
-    justify-content:space-between;
 }
 ul, ol{
     list-style:none;
@@ -733,12 +724,10 @@ address {
     margin-left: 20px;
 }
 
-
-
-
-
-
 @media screen and (max-width: 1080px){
+    main {
+        padding-top: 60px;
+    }
     .site-header {
         position: fixed;
         background-color: #fff;
@@ -813,8 +802,9 @@ address {
     }
 }
 
-
+/*
 @media screen and (min-width: 767px){
+*/
     .hover-opacity {
         transition-property: opacity;
         transition-duration: 0.2s;
@@ -861,9 +851,10 @@ address {
         border-left: solid 3px #fff;
         border-top: solid 3px #fff;
     }
-}
+/*}*/
 
 @media screen and (max-width: 767px){
+    
     html{
         font-size:15px;
     }
@@ -879,7 +870,6 @@ address {
     .section-underlayer-hero.course {
         background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-sp.png);
     }
-
     .section-underlayer-hero{
         background-size:100%;
         padding-top:42px;
